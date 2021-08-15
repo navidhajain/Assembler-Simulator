@@ -329,7 +329,7 @@ if __name__ == "__main__":
         if "hlt" in arr[i] and i!=len(arr)-1:            
             print("hlt not being used as the last instruction at line number ", i)
             exit()
-
+    
     for i in range(i,len(arr)):
         arr2 = arr[i].split()
         if arr2[0] == "var" :
@@ -346,8 +346,7 @@ if __name__ == "__main__":
                 key = a[0][:-1]
                 labels[key] = getbin(i - noofvariables)
         if "hlt" in s:
-            hltnotthere = False
-    #print("yuvi_is_god")             
+            hltnotthere = False            
 
     for line in arr1:
         progc += 1
