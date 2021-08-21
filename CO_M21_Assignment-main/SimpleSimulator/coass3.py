@@ -98,7 +98,7 @@ def multiply(line): #INOMPLETE
     reg2 = getint(regs[line[10:13]])
     reg3 = getint(regs[line[13:]])
     reg4 = reg2 * reg3
-    
+
     if reg4 > 256 or reg4 < -256:
         regs["111"] = "0000000000001000"        
     else:     
@@ -108,6 +108,7 @@ def multiply(line): #INOMPLETE
     printline(line)
     program_counter += 1    
 
+#nwkna
 
 def divide(line):
     global program_counter
