@@ -109,6 +109,7 @@ def multiply(line): #INOMPLETE
     program_counter += 1    
 
 #nwkna
+#nsakv
 
 def divide(line):
     global program_counter
