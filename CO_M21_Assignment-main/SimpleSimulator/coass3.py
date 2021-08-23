@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 regs= {"000": "0000000000000000",
        "001": "0000000000000000",
        "010": "0000000000000000",
@@ -242,7 +244,7 @@ def hlt(line):
     program_counter += 1
 
 program_counter=0
-
+#isko yahan pe likhne se kuch nhi hoga isse acha upar hi likh dete top pe
 def printline(line):
     print(getpc(program_counter), end=' ')
     for i in regs:
@@ -266,7 +268,7 @@ def process(line):
         movreg(line)
         #printline(line)
     if code=="00100":
-        load(line)
+        load(line)        
         #printline(line)
     if code=="00101":
         store(line)
@@ -314,14 +316,20 @@ def process(line):
         hlt(line)
         #printline(line)
 
+x = []
+y = []
 
 def main():
     global memory_address
+    cycle_number=0
     global program_counter
     arr = []
+    
     while True:
         try:
             line = input()
+            if line == "ss":
+                break
             arr.append(line)
         except EOFError:
             break
@@ -334,10 +342,23 @@ def main():
 
 
     while program_counter >=0 and program_counter < len(arr):
+        x.append(cycle_number)
+        y.append(program_counter)
         process(arr[program_counter])
+        cycle_number+=1
+        
+    # print("yash is god")
+    # print(x)
+    # print(y)
+    plt.plot(x,y,'o')
+    plt.savefig("abc.png")
+    #if plt.show doesnt work use plt.savefig(specify path wjere pu want to store the png)
+    #for load and store 2 points aane chahiye cuz we are accenss from 2 sides
+
 
     for i in range(len(memory_address)):
         print(memory_address[i], end = '\n')
 
-if __name__ == "__main__":
+if __name__== "__main__":
+    #print("yash is god")
     main()
