@@ -1,0 +1,57 @@
+[93m[1m==================================================[0m
+[93m[1m================ TESTING ASSEMBLER ===============[0m
+[93m[1m==================================================[0m
+
+[94m[1mRuning simple tests[0m
+[92m[PASSED][0m test1
+[92m[PASSED][0m test2
+[92m[PASSED][0m test3
+[92m[PASSED][0m test4
+[92m[PASSED][0m test5
+[94m[1m
+Running hard tests[0m
+[92m[PASSED][0m test1
+[92m[PASSED][0m test2
+[94m[1mRunning error tests[0m
+[96mRunning test1[0m
+Variable not declared at the begining
+============================================
+
+[96mRunning test2[0m
+Use of undefined variablesat line number  7
+============================================
+
+[96mRunning test3[0m
+hlt not being used as the last instruction at line number  0
+============================================
+
+[96mRunning test4[0m
+hlt not being used as the last instruction at line number  0
+============================================
+
+[93m[1m==================================================[0m
+[93m[1m================ TESTING SIMULATOR ===============[0m
+[93m[1m==================================================[0m
+
+[94m[1mRuning simple tests[0m
+[92m[PASSED][0m test1
+[92m[PASSED][0m test2
+[92m[PASSED][0m test3
+[92m[PASSED][0m test4
+[92m[PASSED][0m test5
+[94m[1m
+Running hard tests[0m
+[92m[PASSED][0m test1
+[92m[PASSED][0m test2
+
+============== RESULTS =================
+
+Assembler ===>
+[95mSimple: Marks = 10 out of 10
+Hard: Marks = 10 out of 10
+[1m[92mTotal: 20 out of 20
+[0mSimulator ===>
+[95mSimple: Marks = 10 out of 10
+Hard: Marks = 10 out of 10
+[1m[92mTotal: 20 out of 20
+[0m

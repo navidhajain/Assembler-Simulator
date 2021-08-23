@@ -351,9 +351,9 @@ def main():
 
     plt.xlabel("Cycle Number")
     plt.ylabel("Memory Address")
-    plt.plot(x, y, 'o')
-    plt.show()
-    
+    plt.plot(x, y, 'o')    
+    plt.savefig("abc.png")
+
     for i in range(len(memory_address)):
         print(memory_address[i], end='\n')
 
