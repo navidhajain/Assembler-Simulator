@@ -333,7 +333,7 @@ if __name__ == "__main__":
     for i in range(i,len(arr)):
         arr2 = arr[i].split()
         if arr2[0] == "var" :
-            print("Variable not declared at the begining")
+            print("Variable not declared at the begining at line number ", i)
             exit()
 
     for i in range(0, len(arr)):
